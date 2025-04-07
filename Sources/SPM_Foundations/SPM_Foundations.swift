@@ -10,7 +10,7 @@ final public class Foundations: SharedContainer {
     public static let shared = Foundations()
 }
 
-extension Foundations {
+public extension Foundations {
     
     var storageManager: Factory<StorageManager> {
         self { StorageManagerImplementation.shared }
