@@ -3,15 +3,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "SPM_Foundations",
+    name: "Foundations",
     platforms: [
         .iOS(.v13),
         .macOS(.v10_15)
     ],
     products: [
         .library(
-            name: "SPM_Foundations",
-            targets: ["SPM_Foundations"]),
+            name: "Foundations",
+            targets: ["Foundations"]),
     ],
     dependencies: [
         // Factory dependency
@@ -19,13 +19,13 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SPM_Foundations",
+            name: "Foundations",
             dependencies: [
                 // ADD: Factory to target dependencies
                 .product(name: "Factory", package: "Factory"),
             ]),
         .testTarget(
-            name: "SPM_FoundationsTests",
-            dependencies: ["SPM_Foundations"]),
+            name: "FoundationsTests",
+            dependencies: ["Foundations"]),
     ]
 )
