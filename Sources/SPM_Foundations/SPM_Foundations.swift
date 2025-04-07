@@ -16,4 +16,9 @@ extension Foundations {
         self { StorageManagerImplementation.shared }
             .singleton
     }
+    
+    var colorHelper: Factory<ColorHelper> {
+        self { ColorHelperImplementation.shared }
+            .singleton
+    }
 }
