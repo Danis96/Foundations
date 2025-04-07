@@ -10,7 +10,7 @@ import Security
 
 final class StorageManagerImplementation: StorageManager {
     
-    @MainActor static let shared = StorageManagerImplementation()
+    static let shared = StorageManagerImplementation()
     
     // MARK: - Constants
     private struct StorageKeys {
