@@ -68,11 +68,7 @@ enum ColorHelper {
     case darkThemeBackground
     case lightThemeBackground
     case yellow
-    case backgroundColor
-    case dividerColor
-    case primaryColor
-    case textColor
-    case secondaryTextColor
+
     
     @available(macOS 10.15, *)
     var color: Color {
